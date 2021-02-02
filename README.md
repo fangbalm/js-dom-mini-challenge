@@ -47,6 +47,14 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+When JavaScript console is printing null, go into HTML and look for script tags. Ensure that the script tags are either at the end of the <body> OR add in the 'defer' keyword to tell JS to wait until they've renderedeverything else on the page to run the script tags. 
+
+ <script src="index.js" defer></script>
+
+ *The order of the attributes inside of an element does not matter. defer could also be before src="index.js"
+
+ NOTE: also changed the header variable from const to let, to access it later
+  
 
 ```
 ___________
@@ -57,7 +65,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+w3school syntax for changing CSS with javascript: https://www.w3schools.com/js/js_htmldom_css.asp 
 ```
 ___________
 
